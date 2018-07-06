@@ -1,3 +1,5 @@
+/* eslint-disable camelcase */
+
 import axios from 'axios'
 import strip_ansi from 'strip-ansi'
 import { URL } from 'url'
