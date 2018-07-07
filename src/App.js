@@ -132,7 +132,6 @@ const combineResponses = ({ buildResponse, pullRequestResponse, sha, html_url, t
 }
 
 const handleGithubEvent = (context) => {
-  console.log(context)
   const {
     state, // State is important to tell whether the build was a failure or not.
     target_url, // Processing the target_url is one of the fastest ways we can grab the build id out of the notification.
