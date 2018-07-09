@@ -5,6 +5,9 @@ _A github application to monitor CI build issues and add comments to the offendi
 
 ----
 
+[![Example](docs/example.png)]()
+
+----
 
 Usage
 ---
