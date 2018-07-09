@@ -24,9 +24,7 @@
     "probot": "^7.0.0",
     "strip-ansi": "^4.0.0",
     "travisci-webhook-handler": "^2.0.0",
-    "babel-register": "^6.26.0"
-  },
-  "devDependencies": {
+    "babel-register": "^6.26.0",
     "babel-jest": "^23.2.0",
     "babel-preset-env": "^1.7.0",
     "eslint": "^4.19.1",
@@ -39,7 +37,8 @@
     "standard": "^10.0.3"
   },
   "engines": {
-    "node": ">= 8.3.0"
+    "node": ">= 8.3.0",
+    "yarn": "1.6.0"
   },
   "standard": {
     "env": [
