@@ -28,7 +28,6 @@ export const findAssociatedPullRequest = ({ sha: pr_sha, pullRequests }) => {
 
 export const processBuildResponse = ({ target_url, html_url, sha, buildResponse: { data: { jobs = [] } } }) => {
   return new Promise((resolve, reject) => {
-
     // If there aren't any jobs detected then we're going to have a bad time looking for the build logs.
     if (jobs.length === 0 || !jobs) {
       reject(new Error(`There aren't any jobs to process so we won't be able to get any build logs.`))
@@ -180,7 +179,6 @@ export const handleGithubEvent = (context) => {
       // We need combined data from both Travis's job logs and github's pull request data so let's just get them both here.`
       Promise.all([travisBuildPromise, githubPullRequestPromise])
         .then(([buildResponse, pullRequestResponse]) => {
-
           // get the pull request details and a comment created by scanning the build logs.
           combineResponses({ buildResponse, pullRequestResponse, sha, html_url, target_url, context })
             .then(([
@@ -189,12 +187,12 @@ export const handleGithubEvent = (context) => {
             ]) => {
               // with the combined results send over the comment text to the pull request comment log.
               updatePullRequest({ owner: login, repo: name, number, body: comment, context })
-              .then(({ url }) => {
-                resolve(`Successfully added comment at ${url}`)
-              })
-              .catch((err) => {
-                reject(new Error(err))
-              })
+                .then(({ url }) => {
+                  resolve(`Successfully added comment at ${url}`)
+                })
+                .catch((err) => {
+                  reject(new Error(err))
+                })
             })
             .catch((err) => {
               reject(new Error(err))
