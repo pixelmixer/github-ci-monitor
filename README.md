@@ -5,7 +5,8 @@ _A github application to monitor CI build issues and add comments to the offendi
 
 ----
 
-[![Example](docs/example.png)]()
+[![Example](docs/example.png)](https://github.com/pixelmixer/github-ci-monitor-example/pull/3)
+Live example can be found at [github-ci-monitor-example pull request](https://github.com/pixelmixer/github-ci-monitor-example/pull/3).
 
 ----
 
