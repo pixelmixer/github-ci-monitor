@@ -23,12 +23,12 @@
     "axios": "^0.18.0",
     "probot": "^7.0.0",
     "strip-ansi": "^4.0.0",
-    "travisci-webhook-handler": "^2.0.0"
+    "travisci-webhook-handler": "^2.0.0",
+    "babel-register": "^6.26.0"
   },
   "devDependencies": {
     "babel-jest": "^23.2.0",
     "babel-preset-env": "^1.7.0",
-    "babel-register": "^6.26.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.13.0",
