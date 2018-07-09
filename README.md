@@ -57,3 +57,13 @@ Disclosures
 --
 - This application was created as part of a coding challenge.
 - To read more details about the development process and challenges give the [EXPERIENCE.md](EXPERIENCE.md) file a read.
+
+Credits
+--
+Created by [Dustin Sparks](https://github.com/pixelmixer).
+
+Legal
+--
+License: [ISC License](LICENSE)
+Copyright (c) 2018, Dustin Sparks <pixelmixer@gmail.com> (djsparks.com)
+
